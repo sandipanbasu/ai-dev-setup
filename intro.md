@@ -12,8 +12,8 @@ While most of the noise focuses on the code generation aspect, with good reasons
     
 4. Part 4 - yet to be documented - How does an agent handle code review of MR 
 5. Part 5 - yet to be documented - How to integrate P[laywright test agents](https://playwright.dev/docs/test-agents) to do automated testing 
-6. Part 6 - yet to be documented - a Deploy agent, where while the mechanics of actual deploying is done well by CI/CD, the decision to deploy is still human-driven - at least now in Horizon Solar (aka SAM), and I would really like to outsource that to an agent
-7. Part 7 - yet to be documented - (PM Point of View) How to document and prototype a new feature using agents + Figma / raw HTML (Do note Jayesh and Valerie have a stronger point of view, where both have created LLM-assisted prototypes which are very, very compelling )  
+6. Part 6 - yet to be documented - a Deploy agent, where while the mechanics of actual deploying is done well by CI/CD, the decision to deploy is still human-driven and I would really like to outsource that to an agent
+7. Part 7 - yet to be documented - (PM Point of View) How to document and prototype a new feature using agents + Figma / raw HTML  
 8. Part 8 - yet to be done and documented - Shortcut Manager (scrum master) - how to manage the shortcut tasks based on changing priorities, which in turn are documented in Slack and Notion pages. The agent’s objective here is to bring out the n most important thing that we  should do, tally with MR’s being raised and inform humans that there is alignment or deviation, etc 
 9. Part 9 - yet to be done and documented - Production Logs Agents acting as L1+L2 support to look for bugs and inform the team - creates a shortcut ticket, hands to the build agent, which fixes, then to review age
 
