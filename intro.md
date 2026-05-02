@@ -17,7 +17,21 @@ While most of the noise focuses on the code generation aspect, with good reasons
 8. Part 8 - yet to be done and documented - Shortcut Manager (scrum master) - how to manage the shortcut tasks based on changing priorities, which in turn are documented in Slack and Notion pages. The agent’s objective here is to bring out the n most important thing that we  should do, tally with MR’s being raised and inform humans that there is alignment or deviation, etc 
 9. Part 9 - yet to be done and documented - Production Logs Agents acting as L1+L2 support to look for bugs and inform the team - creates a shortcut ticket, hands to the build agent, which fixes, then to review age
 
-Some notes - 
+# Question - Does it save anything if we use an agent orchestrator?  
+
+1. On 20-April-2026 - without agent orchestrator using Sonnet directly
+    1. total tokens were 50 million (99% input token, 1% output token). 
+    2. avg cost per request = **$0.1191**
+2. Between 22-April-2026 to 1st-May -2026 - with Ruflo as agent orchestrator always on (only the build agent is on)
+    1. total tokens were ~222 mill (similar input to output token ratio, indicating that on average the workload was similar in nature)
+    2. avg cost per request - **$0.0368**
+    3. Models - the orchestrator’s main agent was codex, but it does some routing for certain tasks 
+        1. gpt 5.3 codex 
+        2. sonnet 
+        3. glm
+        4. kimi
+
+# Some notes - 
 
 1. I want to emphasize that Ruflo is just one such orchestrator - and there are a lot of choices. Hence, whenever you read the term “ruflo” generalize that to an agent orchestrator 
 2.
